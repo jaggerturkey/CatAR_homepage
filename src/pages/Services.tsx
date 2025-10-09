@@ -37,7 +37,7 @@ export default function Services() {
   const [uploading, setUploading] = useState(false)
   const [uploadProgress, setUploadProgress] = useState(0)
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([])
-  const [listRefreshing, setListRefreshing] = useState(false)
+  const [, setListRefreshing] = useState(false)
 
   async function refreshList() {
     setListRefreshing(true)
