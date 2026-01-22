@@ -128,6 +128,48 @@
   align-items: start;
 }
 
+/* Login Prompt */
+.login-prompt {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+}
+
+.login-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-prompt h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.login-prompt p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.btn-login-prompt {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-login-prompt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
 .upload-area {
   background: #f8fafc;
   border-radius: 16px;
@@ -218,6 +260,38 @@
 .uploaded-files li {
   padding: 0.5rem 0;
   color: #555;
+  word-break: break-all;
+}
+
+.refresh-btn {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.upload-btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-controls {
+  margin-top: 1.5rem;
 }
 
 .upload-info {

@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .nav-logo {
@@ -60,6 +61,70 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* Auth Section */
+.nav-auth {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.auth-loading {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.user-name {
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.btn-login,
+.btn-logout {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.btn-login {
+  background: white;
+  color: #667eea;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-logout:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
 /* Main Content */
 .main-content {
   flex: 1;
@@ -95,5 +160,20 @@
   .nav-link {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+
+  .user-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .user-name {
+    font-size: 0.85rem;
+  }
+
+  .btn-login,
+  .btn-logout {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 }
